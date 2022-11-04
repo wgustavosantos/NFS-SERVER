@@ -69,12 +69,12 @@ export default class UploadFiles extends Component {
     this.setState({
       selectedFiles: undefined,
     });
-    window.location.reload();
   }
 
   deletefiles(fileName) {
     //api.get(`/delet/${fileName}`)
     UploadService.deleteFiles(fileName);
+    window.location.reload();
   }
 
   render() {
