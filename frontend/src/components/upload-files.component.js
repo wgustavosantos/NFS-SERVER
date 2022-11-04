@@ -75,7 +75,6 @@ export default class UploadFiles extends Component {
   deletefiles(fileName) {
     //api.get(`/delet/${fileName}`)
     UploadService.deleteFiles(fileName);
-    window.location.reload();
   }
 
   render() {
